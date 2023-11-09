@@ -14,21 +14,20 @@
 
   <section id="game">
     <div id="player1">
-      <h2>Player 1</h2>
-      <button onclick="makeChoice('player1', 'rock')">Rock</button>
-      <button onclick="makeChoice('player1', 'paper')">Paper</button>
-      <button onclick="makeChoice('player1', 'scissors')">Scissors</button>
+      <h2>Your Choice</h2>
+      <button onclick="makeChoice('rock')">Rock</button>
+      <button onclick="makeChoice('paper')">Paper</button>
+      <button onclick="makeChoice('scissors')">Scissors</button>
     </div>
     
-    <div id="player2">
-      <h2>Player 2</h2>
-      <input type="text" id="player2Choice" placeholder="Enter choice (rock, paper, or scissors)">
-      <button onclick="makeChoice('player2', getPlayer2Choice())">Submit Choice</button>
+    <div id="computerChoice">
+      <h2>Computer's Choice</h2>
+      <p id="computerSelection">---</p>
     </div>
     
     <div id="result">
       <h2>Result</h2>
-      <p id="outcome">Make your choices to start the game!</p>
+      <p id="outcome">Make your choice to start the game!</p>
     </div>
   </section>
 
